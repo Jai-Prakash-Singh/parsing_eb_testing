@@ -23,7 +23,7 @@ def main(link):
         try:
 	    ip_port = choice(ip_list)
 	    #print ip_port
-            proxy_list = {'http': r'http://yourusername:yourpassword@'+ip_port,'https': r'https://vinku:india123@'+ip_port}
+            proxy_list = {'http': r'http://yourusername:yourpassword@'+ip_port,'https': r'https://username:passowrd@'+ip_port}
             proxy = urllib2.ProxyHandler(proxy_list)
             auth = urllib2.HTTPBasicAuthHandler()
             opener = urllib2.build_opener(proxy, auth, urllib2.HTTPHandler)
